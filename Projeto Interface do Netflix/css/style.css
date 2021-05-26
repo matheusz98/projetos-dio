@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Poppins', sans-serif;
+    color :#ffffff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+
+header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    letter-spacing: 4px;
+    color: var(--vermelho);
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+.serie-principal {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/capa.jpg');
+    background-size: cover;
+    font-size: 15px;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.box-serie {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carousel-series {
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 300px;
+        margin-top: 5px;
+    }
+}
